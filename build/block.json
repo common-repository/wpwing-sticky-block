@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "wpwing/sticky-block",
+  "version": "1.0.0",
+  "title": "WPWing Sticky Block",
+  "category": "design",
+  "keywords": [
+    "Sticky",
+    "Sticky Block",
+    "WPWing"
+  ],
+  "icon": "sticky",
+  "description": "Sticky block which can hold other block like as group or column block.",
+  "attributes": {
+    "topSpace": {
+      "type": "integer",
+      "default": 0
+    },
+    "checkForAdmin": {
+      "type": "boolean",
+      "default": true
+    },
+    "zIndex": {
+      "type": "integer",
+      "default": 1
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "wpwing-sticky-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
